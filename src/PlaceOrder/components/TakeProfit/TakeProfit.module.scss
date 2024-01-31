@@ -1,0 +1,125 @@
+.root {
+    background: #2b273b;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 0px;
+    .take_profit_switcher {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px;
+        .profit_header {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+        }
+    }
+    .profits_list_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 10px;
+        .profits_list_header {
+            display: grid;
+            grid-template-columns: 54px 123px auto;
+            & > p {
+                font-size: 12px;
+                white-space: nowrap;
+            }
+        }
+        .profits_list_add_btn {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            .profits_list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 12px;
+                padding: 0;
+                margin: 0;
+                & > li {
+                    display: grid;
+                    grid-template-columns: 54px 123px auto;
+                    align-items: flex-start;
+                    list-style: none;
+                    height: 24px;
+                    border-bottom: 1px solid #a2a7b9;
+                    & > div {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 12px;
+                        .profit_input {
+                            width: 80%;
+                            background: none;
+                            border: none;
+                            outline: none;
+                            font-size: 12px;
+                            font-family: "Inter";
+                            color: #fff;
+                        }
+                    }
+                    .profit {
+                        padding-right: 16px;
+                    }
+                    .target_price {
+                        padding-right: 37px;
+                    }
+                    .amount {
+                        & > input {
+                            width: 28px;
+                        }
+                        .delete_profit {
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            background-color: #565861;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: none;
+                            cursor: pointer;
+                            margin-left: 30px;
+                            .delete_icon {
+                                width: 12px;
+                                height: 12px;
+                                color: #a2a7b9;
+                            }
+                        }
+                    }
+                }
+            }
+            .add_profit_btn {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                color: #0078ff;
+                font-size: 12px;
+                cursor: pointer;
+                white-space: nowrap;
+                border: none;
+                background: none;
+                .add_profit_icon {
+                    color: #0078ff;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+        .projected_profit_wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            & > p {
+                font-size: 12px;
+                & > span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
